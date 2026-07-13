@@ -6,7 +6,7 @@
 /*   By: gustde-s <gustde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 16:25:56 by gustde-s          #+#    #+#             */
-/*   Updated: 2026/06/18 17:31:10 by gustde-s         ###   ########.fr       */
+/*   Updated: 2026/07/13 16:40:17 by gustde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_printf(const char *format, ...) // recebe uma string imutavel e uma quant
 	i = 0;
 	while (format[i])
 	{
-		if (format[i] == '%') // verificar se o i = 0 é %, se for, chama a função auxiliar.
+		if (format[i] == '%') // verificar se o i é %, se for, chama a função auxiliar.
 		{
 			count += format_handle(format[i + 1], args); // count recebe o resultado da função (que todas as funções retornam basicamente o size da impressão)
 			i++;                                         // e chama a format com o parametro seguinte de %  -- no caso o i + 1 e passa tambem os args
