@@ -6,7 +6,7 @@
 /*   By: gustde-s <gustde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 16:25:56 by gustde-s          #+#    #+#             */
-/*   Updated: 2026/07/13 16:40:17 by gustde-s         ###   ########.fr       */
+/*   Updated: 2026/07/13 19:01:48 by gustde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ static int	format_handle(char format, va_list args) // format para receber o cha
 		return (ft_print_hex(va_arg(args, unsigned int), format));
 	else if (format == '%')
 		return (ft_print_char('%'));
+	else if (format == 'a') // re-coding not in project
+		return (ft_print_42());
 	return (0);
 	/* usamos if e else if para verificar qual sera a flag utilizada e consequentemente a função que vai ser chamada*/
 }

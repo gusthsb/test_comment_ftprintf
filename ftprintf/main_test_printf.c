@@ -189,6 +189,7 @@ int	main(void)
 	}
 	else
 		printf("  FALHOU (esperado %d, veio %d)\n\n", x, y);
+	ft_printf("Hello %a World");
 
 	printf("\n===== RESULTADO: %d/%d passaram (baseado em retorno) =====\n",
 		g_ok, g_total);

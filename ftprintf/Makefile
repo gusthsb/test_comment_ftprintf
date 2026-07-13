@@ -10,7 +10,8 @@ SRC = ft_printf.c \
 	src/ft_print_int.c \
 	src/ft_print_pointer.c \
 	src/ft_print_string.c \
-	src/ft_print_uns_int.c
+	src/ft_print_uns_int.c \
+	src/ft_print_42.c
 
 all: $(NAME)
 
