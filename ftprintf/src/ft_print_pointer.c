@@ -6,14 +6,14 @@
 /*   By: gustde-s <gustde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/14 19:26:59 by gustde-s          #+#    #+#             */
-/*   Updated: 2026/07/03 17:28:03 by gustde-s         ###   ########.fr       */
+/*   Updated: 2026/07/13 16:49:25 by gustde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 static int	print_hex_pointer(unsigned long n) // unsigned long, pois tem uma capacidade de armazenamento bem maior que
-{									           // o unsigned int, ideal para quando vamos trabalhar com ponteiros, endereços de memoria
+{									           // o unsigned long, ideal para quando vamos trabalhar com ponteiros, endereços de memoria
 	char	*base;
 	char	digit;
 	int		count;

@@ -25,4 +25,8 @@ fclean: clean
 		rm -f $(NAME)
 re: fclean all
 
+test: $(NAME)
+	gcc -Wall -Wextra -Werror main_test_printf.c $(NAME) -o test
+	./test
+
 .PHONY: all clean fclean re
